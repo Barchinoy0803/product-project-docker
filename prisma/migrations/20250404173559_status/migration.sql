@@ -1,0 +1,5 @@
+-- CreateEnum
+CREATE TYPE "STATUS" AS ENUM ('ACTIVE', 'INACTIVE');
+
+-- AlterTable
+ALTER TABLE "User" ADD COLUMN     "status" "STATUS" NOT NULL DEFAULT 'INACTIVE';
